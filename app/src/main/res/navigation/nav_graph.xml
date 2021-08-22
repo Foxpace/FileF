@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/FolderFragment">
+
+    <fragment
+        android:id="@+id/FolderFragment"
+        android:name="com.creativemotion.filef.fragments.FolderFragment"
+        android:label="@string/folder_fragment"
+        tools:layout="@layout/fragment_folders">
+
+        <action
+            android:id="@+id/action_start_search"
+            app:destination="@id/SearchFragment" />
+        <action
+            android:id="@+id/action_intro"
+            app:destination="@id/IntroFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/IntroFragment"
+        android:name="com.creativemotion.filef.fragments.IntroFragment"
+        android:label="@string/intro_fragment"
+        tools:layout="@layout/fragment_intro">
+
+        <action
+            android:id="@+id/action_go_home"
+            app:destination="@id/FolderFragment" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/SearchFragment"
+        android:name="com.creativemotion.filef.fragments.SearchFragment"
+        android:label="@string/search_fragment"
+        tools:layout="@layout/fragment_search">
+        <argument
+            android:name="numberOfFiles"
+            android:defaultValue="3"
+            app:argType="integer" />
+        <argument
+            android:name="walkerType"
+            android:defaultValue="WalkerFiles"
+            app:argType="com.creativemotion.filef.utils.WalkerFactory$WalkerType" />
+        <action
+            android:id="@+id/action_go_home"
+            app:destination="@id/FolderFragment" />
+    </fragment>
+</navigation>

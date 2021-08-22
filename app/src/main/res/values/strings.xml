@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">FileF</string>
+    <string name="folder_fragment">Folder Fragment</string>
+    <string name="search_fragment">Search Fragment</string>
+    <string name="intro_fragment">Intro Fragment</string>
+
+    <string name="failed_to_add_string">Failed to add file - check permissions</string>
+    <string name="files_to_search">Find the biggest files in:</string>
+    <string name="add_folder">Add folder</string>
+    <string name="button_start_search">Start search</string>
+    <string name="list_is_empty">List is empty :(</string>
+    <string name="number_of_files">Number of files</string>
+    <string name="pick_number">Pick number of files to search for</string>
+    <string name="small_number">Write higher number than 0</string>
+    <string name="file_is_included">The file is included</string>
+    <string name="search_results">Search results:</string>
+    <string name="cancel">Cancel</string>
+    <string name="search_error">Error occurred</string>
+    <string name="search_no_files">No files</string>
+    <string name="search_notification_the_biggest_files">Searching the biggest files</string>
+    <string name="search_notification_the_biggest_files_finished">Searching the biggest files - finished</string>
+    <string name="intro_permission">Give permission to access external storage / manage files.</string>
+    <string name="intro_give_permission">Give permission</string>
+    <string name="next">Next</string>
+    <string name="intro_permission_needed">Permission is require to find files</string>
+
+    <string-array name="search_algos">
+        <item>IO File API</item>
+        <item>NIO File API</item>
+        <item>Content resolver</item>
+        <item>Apache IO</item>
+    </string-array>
+
+    <string-array name="search_algos_below_oreo">
+        <item>IO File API</item>
+        <item>Content resolver</item>
+        <item>Apache IO</item>
+    </string-array>
+
+</resources>
