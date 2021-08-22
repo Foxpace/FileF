@@ -2,9 +2,9 @@
 
 [![API](https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=19)[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-<p align="center"><img src="images\icon.png" alt="loading" width="250" /></p>
+<p align="center"><img src="https://github.com/Foxpace/FileF/blob/master/Images/icon.png" alt="loading" width="250" /></p>
 
-<p align="center"><img src="images\merged.png" alt="merged_app" width="600" /></p>
+<p align="center"><img src="https://github.com/Foxpace/FileF/blob/master/Images/merged.png" alt="merged_app" width="600" /></p>
 
 With new versions of the Android, it is becomes harder and harder to access storage via some APIs. The FileF collects **4 different approaches** to access storage in Android, which work with fine until the Android 10. **Android 11 and higher requires MANAGE_APP_ALL_FILES_ACCESS_PERMISSION** to access all the files in the background via older APIs. If the app needs this permissions and is released on Google Play, it needs to serve specific purpose like file browser, antivirus, ... - more on that [here](https://developer.android.com/training/data-storage/manage-all-files). Otherwise, you should use scoped storage - more [here](https://developer.android.com/guide/topics/data).
 
